@@ -4,9 +4,11 @@ var allButtons = document.querySelectorAll('.parent .click-me');
 
 addNewButton.addEventListener('click', createButton);
 
-for(var i = 0; i < allButtons.length; i++) {
-  allButtons[i].addEventListener('click', showAlert);
-}
+// for(var i = 0; i < allButtons.length; i++) {
+//   allButtons[i].addEventListener('click', showAlert);
+// }
+
+parent.addEventListener('click', () => alert("parent clicked!"));
 
 function showAlert() {
   alert('You clicked me!');
